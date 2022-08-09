@@ -14,7 +14,29 @@
 </head>
 <body>
     <h1>Where you live?</h1>
-    Digite onde você mora: <input type="text" name="txtmora" id="txtmora">
-    <input type="button" value="Confirmar">
+    <!--area de input para o pais onde vive-->
+    País: <input type="text" name="txtNasceu" id="txtNasceu">
+    <input type="button" value="Confirmar" onclick="confirma()">
+    <!--are onde vai escrever o resultado da function-->
+    <div id="divInfo"></div>
+
+    <script>
+        function confirma() {
+            var br = "brasil"
+            // div
+            var divInfo = window.document.getElementById('divInfo')
+            // Aonde nasceu
+            var txtNasceu = window.document.getElementById('txtNasceu').value
+            txtNasceu = txtNasceu.toLowerCase()
+
+            divInfo.innerHTML = `<p>Vivendo em ${txtNasceu}.</p>`
+            if (txtNasceu == br) {
+                divInfo.innerHTML += `<p>Você é brasileiro.</p>`
+            }else {
+                divInfo.innerHTML += `<p>Você é estrangeiro.</p>`
+            }
+          
+        }
+    </script>
 </body>
 </html>
