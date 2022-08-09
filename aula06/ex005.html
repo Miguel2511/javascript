@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex005</title>
+    <style>
+        body {
+            background-color: rgb(2, 138, 93);
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudo DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+    <div id="clique">
+        Clique em mim
+    </div>
+    <p id="msg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente minus vitae tempora sit consequatur? Illum et esse at, sequi quos, nemo dignissimos harum, modi fugit quod rem eaque soluta. Vel.</p>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        // var nome = document.getElementsByClassName('clique')[0]
+        // nome.innerText = 'Clique em min 222222'
+        var msg = document.querySelector('p#msg')
+        msg.innerHTML = 'LOREM AQUI'
+        </script>
+</body>
+</html>

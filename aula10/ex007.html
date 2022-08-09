@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX007</title>
+    <style>
+        body {
+            font: normal 20px arial;
+            background-color: aquamarine;
+        }
+        input#somar {
+            margin: 10px 0px 10px 0px;
+            width: 50px;
+        }
+        input {
+            width: 70px;
+            height: 20px;
+        }
+        input#somar{
+            height: 25px;
+            text-align: center;
+            width: 78px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Caculadora</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2"><br>
+    <input type="button" value="somar" onclick="somar()" id="somar">
+    <div id="res">
+        Resultado:
+    </div>
+
+    <script>
+        function somar() {
+            var txtn1 = document.getElementById('txtn1')
+            var txtn2 = document.getElementById('txtn2')
+            var num1 = Number(txtn1.value)
+            var num2 = Number(txtn2.value)
+            var s = num1 + num2
+            var res = document.getElementById('res')
+            res.innerHTML = `Resultado: A soma entre ${num1} e ${num2} é <strong>${s}</strong>.`
+        }
+    </script>
+
+    <!--
+        ------------------------------------
+        --------------DEU ERRADO------------
+        ------------------------------------
+    <h1>Calculadora</h1>
+    <div>
+        <p>Número 1</p>
+        <input type="number" name="num1" id="inputNum1">
+    </div>
+    
+    <div>
+        <p>Número 2</p>
+        <input type="number" name="num2" id="inputNum2">
+    </div>
+
+    <input type="button" value="somar" id="somar">
+    <div id="res">
+        Total:
+    </div>
+
+    <script>
+        var inputNum1 = window.document.getElementById('inputNum1')
+        var inputNum2 = window.document.getElementById('inputNum2')
+        var res = window.document.querySelector('div#res')
+        var btn = window.document.querySelector('input#somar')
+        var num1 = Number(inputNum1)
+        var num2 = Number(inputNum2.value)
+        var s = num1 + num2
+
+        btn.addEventListener('click', clicouBtn)
+
+        function clicouBtn() {
+            res.innerHTML = (`A soma entre ${num1} e ${num2} é: ${s}`)
+        }
+    </script>
+    -->
+</body>
+</html>
