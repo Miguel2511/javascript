@@ -10,16 +10,16 @@ function carregar() {
     if (hora >= 0 && hora < 12) {
         //BOM DIA
         msg.innerHTML += 'Bom dia!'
-        img.src = 'img/manha.png'
+        img.src = '../img/manha.png'
         document.body.style.background = '#f0c069'
     } else if (hora >= 12 && hora <= 18) {
         msg.innerHTML += 'Boa tarde!'
-        img.src = 'img/tarde.png'
+        img.src = '../img/tarde.png'
         document.body.style.background = '#ff7a00'
     } else {
         msg.innerHTML += 'Boa noite!'
-        img.src = 'img/noite.png'
+        img.src = '../img/noite.png'
         document.body.style.background = '#072726'
-        document.getElementsByClassName('b').style.color = 'white'
+        document.getElementsByClassName().style.color = 'white'
     }
 }
