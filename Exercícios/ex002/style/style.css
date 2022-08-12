@@ -11,7 +11,7 @@ body {
     background-size: 100% 100%;
     position: relative;
     height: 100vh;
-    background-color: aqua;
+    background-color: rgba(43, 121, 121, 0.76);
 }
 div#conteudoSite {
     position: absolute;
@@ -40,17 +40,15 @@ section > div#conteudo {
     background-color: white;
     max-width: 500px;
     margin: auto;
-    padding: 20px 0px;
+    padding: 20px 20px;
     line-height: 2em;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
 }
-div > form {
-    margin: 0px 10px;
-}
-div#divImg {
+img {
     text-align: center;
     padding-top: 20px;
+    margin: auto;
 }
 footer {
     text-align: center;
