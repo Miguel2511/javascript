@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="conteudoSite">
+        <header>
+            <h1>Contador</h1>
+        </header>
+        <section>
+            <div id="conteudo">
+                <div>
+                    <label for="n-inicio">Início:</label>
+                    <input type="number" name="n-inicio" id="n-inicio"> <!--número de inicio-->
+
+                    <p>
+                        <label for="n-fim">Fim:</label>
+                        <input type="number" name="n-fim" id="n-fim"> <!--número de fim-->
+                    </p>
+
+                    <p>
+                        <label for="n-passo">Passo:</label>
+                        <input type="number" name="n-passo" id="n-passo"> <!--número de passo-->
+                    </p>
+
+                    <p> <!--Botão de verificar-->
+                        <input type="submit" value="Contar" onclick="carregar()" class="botao">
+                    </p>
+                </div>
+                <div id="divInfo">
+                    Preencha os campos a cima.
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>@miguellvilela</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="conteudoSite">
+        <header>
+            <h1>TITULO</h1>
+        </header>
+        <section>
+            <!-- AREA BRANCA DO SITE -->
+            <div id="conteudo"> 
+                <div>
+                    <p>
+                        <label for="num">Número:</label>
+                        <input type="number" name="num" id="num">
+                        <!--Botão de verificar-->
+                        <input type="submit" value="Gerar tabuada" onclick="carregar()" class="botao">
+                    </p>
+                </div>
+                
+                <div id="divInfo">
+                    <select name="tabuada" id="seltab" size="10"></select>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+</html>
