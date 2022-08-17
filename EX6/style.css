@@ -4,8 +4,11 @@
     margin: 0px;
     padding: 0px;
 }
-#seltab {
+#divInfo {
     display: none;
+}
+#seltab {
+    
 }
 body {
     font-family: Arial, Helvetica, sans-serif;

@@ -1,11 +1,13 @@
 function carregar() {
     var numero = document.getElementById('num')
     var tab = document.getElementById('seltab')
-    tab.style.display = ''
-    
+    var divInfo = document.getElementById('divInfo')
     if(numero.value.length == 0){
         window.alert('Por favor digite um numero')
+        divInfo.style.display = 'none'
+
     }else{
+        divInfo.style.display = 'block'
         var num = Number(numero.value)
         seltab.innerHTML = ''
         for (var c = 1; c <= 10; c++){
