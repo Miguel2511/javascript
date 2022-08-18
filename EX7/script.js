@@ -28,6 +28,8 @@ function carregar() {
         item.text = `Valor ${num} adicionado`  //escreve dentro da opção
         tab.appendChild(item)   //declara o item como filho da tabela
     }
+    numero.value = ''
+    numero.focus()
 
     // console.log(caseNum)
     // console.log(caseNum.indexOf(num))
@@ -56,7 +58,7 @@ function limpar() {
     console.log(caseNum)
     console.log('LIMPAR')
     tab.innerHTML = ``  //escreve dentro da opção
+    info.innerHTML = ``
     caseNum = []
     console.log(caseNum)
-    // info.innerHTML = ''
 }
