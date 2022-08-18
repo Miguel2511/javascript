@@ -1,7 +1,6 @@
-
 var caseNum = []    //vetor para os números
 
-function adicionar() {
+function adicionar() { 
     numero = document.getElementById('num') //numero inserido
     tab = document.getElementById('area-tab')   //onde os números serão escritos
     divInfo = document.getElementById('divInfo')    //div que contem a area-tab
