@@ -65,3 +65,11 @@ function limpar() {
     caseNum = []
     console.log(caseNum)
 }
+//criar evento apartir de alguma tecla específica
+// document.addEventListener("keydown", function(event) {
+
+//     if(event.key === "Enter") {
+//         console.log("Apertou enter")
+//     }
+
+// })
