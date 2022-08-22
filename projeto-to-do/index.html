@@ -14,26 +14,27 @@
             <h1>Salve a sua próxima tarefa:</h1>
             <div id="form-tarefa">
                 <input type="text" name="input-tarefa" id="input-tarefa">
-                <div id="area-icon">
-                    <ion-icon name="add-outline" id="add-outline"></ion-icon>
+                <div id="area-icon-add" onclick="add()">
+                    <ion-icon name="add-outline" id="icon-add-outline"></ion-icon>
                 </div>
             </div>
         </div>
         <div id="area-lista-tarefa">
             <h1>Estas são as suas tarefas:</h1>
-            <div id="form-lista">
-                <ul id="lista">
-                    <li>
-                        <div class="conteudo-lista">Conteudo</div>
-                        <div id="area-icon2">
-                            <ion-icon name="checkmark-outline" id="icone-feito"></ion-icon>
-                        </div>
-                        <div id="area-icon3">
-                            <ion-icon name="close-outline" id="icone-close"></ion-icon>
+            <div id="form-lista-tarefa">
+                <ul id="ul-tarefa">
+                    <li id="li-tarefa">
+                        <p id="input-lista-tarefa"></p>
+                        <div id="lista-area-icon">
+                            <div id="area-icon-check">
+                                <ion-icon name="checkmark-outline" id="icon-check"></ion-icon>
+                            </div>
+                            <div id="area-icon-close">
+                                <ion-icon name="close-outline" id="icon-close"></ion-icon>
+                            </div>
                         </div>
                     </li>
                 </ul>
-                
             </div>
         </div>
     </div>

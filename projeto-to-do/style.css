@@ -17,28 +17,57 @@ div#form-tarefa {
 }
 #input-tarefa {
     width: 465px;
+    padding: 9px;
     border: 0px;
     border-right: 1px solid black;
 }
-#area-icon {
+#area-icon-add {
     display: inline-block;
     position: relative;
     background-color: transparent;
     width: 35px;
     height: 35px;
 }
-#area-icon2 {
-    display: inline-block;
-    position: relative;
-    background-color: transparent;
-    width: 35px;
-    height: 35px;
+/* -----------------------------------------------------------
+---------------------------------------------------------------- */
+
+#area-lista-tarefa {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
 }
-#area-icon3 {
+div#form-lista-tarefa {
+    position: relative;
+    display: flex;
+    width: 500px;
+    margin: auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: none;
+}
+#input-lista-tarefa {
+    position: absolute;
+    width: 420px;
+    border: 0px;
+    width: 400px;
+    text-align: left;
+    padding: 9px;
+    display: inline-block;
+    /* border-right: 1px solid black; */
+}
+#lista-area-icon {
+    position: absolute;
     display: inline-block;
     position: relative;
     background-color: transparent;
-    width: 35px;
+    width: 80px;
+    height: 35px;
+    margin-left: 420px;
+}
+ul {
+    list-style-type: none;
+}
+li {
     height: 35px;
 }
 ion-icon {
@@ -48,12 +77,43 @@ ion-icon {
     transform: translate(-50%, -50%);
     font-size: 20px;
 }
-li {
-    text-align: center;
-}
-.conteudo-lista {
+#area-icon-check {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
     display: inline-block;
-    height: fit-content;
-    width: 100px;
-    margin-bottom: 20px;
+    height: 35px;
+    width: 40px;
+    background-color: rgb(13, 214, 13);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#area-icon-close {
+    position: absolute;
+    top: 50%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    height: 35px;
+    width: 40px;
+    background-color: red;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#icon-check {
+    /* position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    font-size: 25px; */
+}
+#icon-close {
+    /* position: absolute;
+    top: 50%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    font-size: 25px; */
 }
