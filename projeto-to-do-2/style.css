@@ -121,11 +121,25 @@ ion-icon {
     background-color: rgb(27, 221, 27);
 }
 
+/* CLASSE PARA ESCONDER A TASK */
 .hide {
     display: none;
 }
+
+.task-title {
+    /* background-color: red; */
+    display: block;
+    width: 400px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.task-title::-webkit-scrollbar { 
+    display: none;
+}
+
 /* CLASSE DONE */
-#task-list li.donee {
+#task-list li.done {
     background-color: #34073D;
     color: white;
     text-decoration: line-through;
