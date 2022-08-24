@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    max-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#calc {
+    margin: 5px;
+    width: 400px;
+    padding: .5em;
+    background-color: #c4c4c4;
+    color: black;
+    display: flex;
+    flex-direction: column; /*deixa os itens um em baixo do outro*/
+    /* height: 530px; */
+}
+
+#calc h3 {
+    margin-top: auto;
+    font-size: .8em;
+    font-weight: 300;
+    color: #666;
+}
+
+#operations {
+    text-align: right;
+    display: block;
+}
+
+#previus-operation {
+    color: #777;
+}
+
+#current-operation {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#previus-operation, #current-operation {
+    overflow-wrap: break-word;  /*quebra de linha(impede que o número atravessa o limite da calculadora)*/
+    padding: .2em;
+    min-height: 1.6em;
+}
+
+#buttons-container {
+    display: grid;  /*deixa em linhas*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*divide o grid em 4 colunas cada uma com 1 fração do todo*/
+    gap: 3px;
+    
+}
+
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor: pointer;    /*Muda o mouse para 'mão de clique' */
+}
+
+#buttons-container .number {
+    background-color: #F3F3F3;
+}
+
+#buttons-container button:hover {
+    background-color: #bababa;
+    border-color: #999;
+}
+
+#buttons-container .equal-btn {
+    grid-column: span 2;    /*faz o botão ocupar dois espaços do grid*/
+    background-color: #75a5cb;
+}
+
+#buttons-container .equal-btn:hover {
+    background-color: #3a91d8
+}
